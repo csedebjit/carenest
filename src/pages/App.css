@@ -1,0 +1,340 @@
+.main{
+  height: 100vh;
+  width: 100%;
+}
+.navbar{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: cyan;
+  padding: 10px 20px;
+}
+.logo{
+  font-size: 20px;
+}
+.nest{
+  font-size: 24px;
+  color: blueviolet;
+}
+.menu {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.menu a {
+  border: white ;
+ border-radius: 7px;
+ padding: 2px 4px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu a:hover {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+
+.heading{
+  text-align: center;
+  color: black;
+
+}
+.head{
+  color: blueviolet;
+}
+.resize {
+  width: 20px;
+  height:20px;
+  border-radius: 17px;
+
+}
+.sidebar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 7px;
+}
+.services {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  gap: 20px;
+  background-color: white;
+}
+.first {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 200px;
+  padding: 14px;
+  text-align: center;
+}
+.first img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+
+}
+.first h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+
+}
+.first:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 5px black;
+  cursor: pointer;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  background-color: #c8c2c2;
+  width: 100%;
+  height: 140px;
+  padding: 20px;
+  border-bottom: 2px solid black;
+}
+.contact p {
+ 
+  font-size: 17px;
+}
+.resized {
+  width: 40px;
+  height:40px;
+  border-radius: 17px;
+
+}
+.social {
+  margin-top: 34px;
+
+}
+.social img {
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.company {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: space-around;
+  background-color:cyan;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+}
+.quick {
+  display: flex;
+  flex-direction: column;
+}
+.social-links {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  }
+
+.support-links {
+  display: flex;
+  flex-direction: column;
+}
+.login {
+  width: 50px;
+  height: 27px;
+  color: white;
+  background-color: black;
+  border-radius: 17px;
+
+}
+.user {
+  margin-top: 10px;
+}
+.user a {
+  text-decoration: none;
+  gap: 10px;
+  
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+  text-align: center;
+}
+
+
+.registration-form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.registration-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.form-group input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.gender-options label {
+  font-weight: 500;
+  color: #333;
+}
+
+
+.submit-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.forgot-form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.forgot-form h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: green;
+  font-weight: 500;
+}
+
+.error-message {
+  margin-top: 15px;
+  color: red;
+  font-weight: 500;
+}
+.error-message {
+  color: red;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
