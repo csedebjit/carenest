@@ -6,7 +6,7 @@ import "./Housekeeper";
 import "./Plumber";
 import { useNavigate } from "react-router-dom";
 
-function App() {
+function  App() {
   const navigate = useNavigate();
   const houseKeeper = () => {
     navigate("/housekeeper");
