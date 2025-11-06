@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar (){
-  //    const navigate = useNavigate();
-  //    const login = () => {
-  //   navigate("/");
-  // };
+   const navigate = useNavigate();
+  const handleLogout = () => {
+    localStorage.removeItem("user"); // remove user data
+    alert("You have been logged out!");
+    navigate("/"); // redirect to login page
+  };
 
 return(
     <div className="navbar">
@@ -22,9 +24,9 @@ return(
           <div className="sidebar">
             <img src="/image/twitter.jpg" alt="twitter" className="resize" />
 
-            {/* <button onClick={() => login()} className="login" type="button">
-              LogIn
-            </button> */}
+            <button onClick={handleLogout} className="logout-btn">
+            Logout
+          </button>
           </div>
           </div>
         </div>
