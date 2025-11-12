@@ -120,6 +120,7 @@
   color: white;
   background-color: rgb(44, 32, 215);
   padding: 10px 20px;
+  cursor: pointer;
 }
 .contact p {
  
