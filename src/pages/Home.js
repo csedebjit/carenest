@@ -10,6 +10,7 @@ import Jobs from "./Job";
 import Settings from "./Settings";
 import Newuser from "./Newuser";
 import Forget from "./Forget";
+import BookingForm from "../BookingForm";
 
 function Layout() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function Layout() {
         <Route path="/plumber" element={<Plumber />} />
         <Route path="/new_user" element={<Newuser />} />
         <Route path="/forget" element={<Forget />} />
+        <Route path="/bookingform" element={<BookingForm />} />
       </Routes>
     </>
   );

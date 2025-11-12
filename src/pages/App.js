@@ -49,6 +49,9 @@ function  App() {
             <h3>cook</h3>
           </button>
         </div>
+        <div className="booking-btn">
+          <button onClick={() => navigate("/bookingform")}>Book Now</button>
+        </div>
         <div className="contact">
           <div className="logo">
             <h4>

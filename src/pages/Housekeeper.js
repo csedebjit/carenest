@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Housekeeper.css';
+import { useNavigate } from 'react-router-dom';
 function Housekeeper() {
+  const navigate=useNavigate();
   const normal_cleaning=()=>{
     alert("Booking for Normal Cleaning");
   }
@@ -17,7 +19,7 @@ function Housekeeper() {
     alert("Booking for Ironing");
   }
   const handleClick=()=>{
-   alert("Booking Confirmed ");
+   navigate("/bookingform");
   }
 return (
     <>
