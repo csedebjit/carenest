@@ -1,4 +1,4 @@
-body {
+/* body {
 
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -13,6 +13,9 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   width: 320px;
   text-align: center;
+}
+h1 {
+  color: rgb(187, 66, 187);
 }
 
 h2 {
@@ -61,4 +64,145 @@ h2 {
   font-size: 0.9rem;
   margin-top: 5px;
 }
+ */
 
+ /* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+body {
+  background: #ffffff;
+}
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Purple Background Circles */
+.login-container::before,
+.login-container::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #a64cf4;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.login-container::before {
+  top: -80px;
+  left: -80px;
+}
+
+.login-container::after {
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Logo & Titles */
+.logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+.brand {
+  font-size: 35px;
+  color: #6a1b9a;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.welcome-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  color: #555;
+}
+
+/* Input Boxes */
+.input-box {
+  width: 340px;
+  background: #d9b3ff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.icon {
+  font-size: 20px;
+  color: white;
+  background: #8e24aa;
+  padding: 8px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.forgot {
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0 15px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.login-btn {
+  width: 340px;
+  padding: 12px;
+  border: none;
+  background: #9c27b0;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #7b1fa2;
+}
+
+.register-btn {
+  width: 340px;
+  padding: 12px;
+  border: 2px solid #8e24aa;
+  background: white;
+  color: #8e24aa;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #f3e5f5;
+}
