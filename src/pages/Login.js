@@ -83,7 +83,6 @@ return (
       <p className="sub-text">Login to continue</p>
     </div>
     <form className="login-form" onSubmit={handleLogin}>
-        {/* Phone Field */}
         <div className="input-box">
           <input
             type="text"
@@ -94,7 +93,7 @@ return (
           <FiPhone className="icon" />
         </div>
 
-        {/* Password Field */}
+        
         <div className="input-box">
           <input
             type="password"
@@ -107,10 +106,10 @@ return (
 
         <p className="forgot">Forgot Password?</p>
 
-        {/* Login Button */}
+        
         <button className="login-btn">Login</button>
 
-        {/* Registration Button */}
+        
         <button type="button" className="register-btn">
           Registration
         </button>
