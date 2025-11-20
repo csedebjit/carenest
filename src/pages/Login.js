@@ -114,7 +114,7 @@ return (
           <FiKey size={30} color="white" className="icon" />
         </div>
         {error && <p className="error-text">{error}</p>}
-        <p className="forgot">Forgot Password?</p>
+        
 
         
         <button type="submit" className="login-btn">
@@ -123,8 +123,9 @@ return (
 
         
         <button onClick={handleRegister} className="register-btn">
-          Registration 
+          Register
         </button>
+        <p className="forgot">Forgot Password?</p>
         
       </form>
   </div>
