@@ -55,11 +55,18 @@ function New_User() {
 
   return (
     <div className="form-container">
+      <div className="logo">
+      <div className="same-line">
+        <img src="./image/logo.png" alt="logo" className="logo-img"/>
+      <h1 className="brand">
+            CARE<span className="nest">NEST</span>
+      </h1>
+      </div>
       <form onSubmit={handleSubmit} className="registration-form">
         <h2>User Registration</h2>
 
         <div className="form-group">
-          <label>First Name</label>
+          {/* <label>First Name</label> */}
           <input
             type="text"
             name="firstName"
@@ -71,7 +78,7 @@ function New_User() {
         </div>
 
         <div className="form-group">
-          <label>Last Name</label>
+          {/* <label>Last Name</label> */}
           <input
             type="text"
             name="lastName"
@@ -83,7 +90,7 @@ function New_User() {
         </div>
 
         <div className="form-group">
-          <label>Email or Phone</label>
+          {/* <label>Email or Phone</label> */}
           <input
             type="text"
             name="contact"
@@ -95,7 +102,7 @@ function New_User() {
         </div>
 
         <div className="form-group">
-          <label>Password</label>
+          {/* <label>Password</label> */}
           <input
             type="password"
             name="password"
@@ -148,6 +155,7 @@ function New_User() {
           Register Now
         </button>
       </form>
+      </div>
     </div>
   );
 }
