@@ -9,6 +9,10 @@ function Login() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const handleRegister = (e) => {
+    navigate("/new_user");
+  }
+
   const handleLogin = (e) => {
     e.preventDefault();
     setError("");
@@ -89,10 +93,11 @@ return (
             placeholder="Enter Phone No."
             value={contact}
             onChange={(e) => setContact(e.target.value)}
+            required
           />
           <FiPhone className="icon" />
         </div>
-
+        
         
         <div className="input-box">
           <input
@@ -100,19 +105,23 @@ return (
             placeholder="Enter Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
           <FiKey className="icon" />
         </div>
-
+        {error && <p className="error-text">{error}</p>}
         <p className="forgot">Forgot Password?</p>
 
         
-        <button className="login-btn">Login</button>
+        <button type="submit" className="login-btn">
+          Login
+        </button>
 
         
-        <button type="button" className="register-btn">
-          Registration
+        <button onClick={handleRegister} className="register-btn">
+          Registration 
         </button>
+        
       </form>
   </div>
 );

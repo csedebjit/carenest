@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 function Navbar (){
    const navigate = useNavigate();
   const handleLogout = () => {
-    localStorage.removeItem("user"); // remove user data
+    localStorage.removeItem("user"); 
     alert("You have been logged out!");
-    navigate("/"); // redirect to login page
+    navigate("/"); 
   };
 
 return(
