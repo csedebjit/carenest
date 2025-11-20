@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FiPhone, FiKey } from "react-icons/fi";
 
 function Login() {
@@ -79,11 +80,14 @@ function Login() {
 return (
   <div className="login-container">
     <div className="logo">
-      <img src="logo.png" alt="logo" className="logo-img"/>
+      <div className="same-line">
+        <img src="./image/logo.png" alt="logo" className="logo-img"/>
       <h1 className="brand">
             CARE<span className="nest">NEST</span>
       </h1>
+      </div>
       <h2 className="welcome-text">Welcome Back</h2>
+      
       <p className="sub-text">Login to continue</p>
     </div>
     <form className="login-form" onSubmit={handleLogin}>
@@ -95,7 +99,7 @@ return (
             onChange={(e) => setContact(e.target.value)}
             required
           />
-          <FiPhone className="icon" />
+          <FiPhone size={30} color="white"  className="icon" />
         </div>
         
         
@@ -107,7 +111,7 @@ return (
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <FiKey className="icon" />
+          <FiKey size={30} color="white" className="icon" />
         </div>
         {error && <p className="error-text">{error}</p>}
         <p className="forgot">Forgot Password?</p>
