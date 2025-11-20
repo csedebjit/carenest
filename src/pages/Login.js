@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FiPhone, FiKey } from "react-icons/fi";
 
@@ -125,7 +125,7 @@ return (
         <button onClick={handleRegister} className="register-btn">
           Register
         </button>
-        <p className="forgot">Forgot Password?</p>
+        <Link to="/forget">Forget Password ?</Link>
         
       </form>
   </div>

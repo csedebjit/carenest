@@ -47,13 +47,21 @@ function ForgotPassword() {
   return (
     <div className="forgot-container">
       <form className="forgot-form" onSubmit={handleSubmit}>
+      <div className="logo">
+      <div className="same-line">
+        <img src="./image/logo.png" alt="logo" className="logo-img"/>
+      <h1 className="brand">
+            CARE<span className="nest">NEST</span>
+      </h1>
+      </div>
+      
         <h2>Forgot Password</h2>
         <p className="subtitle">
           Enter your registered email or phone number to receive an OTP.
         </p>
 
         <div className="form-group">
-          <label>Email or Phone</label>
+          {/* <label>Email or Phone</label> */}
           <input
             type="text"
             value={contact}
@@ -69,6 +77,7 @@ function ForgotPassword() {
 
         {successMsg && <p className="success-message">{successMsg}</p>}
         {errorMsg && <p className="error-message">{errorMsg}</p>}
+        </div>
       </form>
     </div>
   );
