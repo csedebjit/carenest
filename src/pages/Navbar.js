@@ -11,20 +11,20 @@ function Navbar (){
   };
 
 return(
-    <div className="navbar">
+    <div className="h-[40px] w-full flex justify-between items-center bg-cyan-400 px-5 py-2">
           <div style={{display:'flex' , flexDirection:"row" , alignItems:'center'  , justifyContent:'space-between'  , width:"90%" , marginLeft:'auto'  , marginRight:'auto'}}>
-          <h1 className="logo">
-            CARE<span className="nest">NEST</span>
+          <h1 className="text-[20px]">
+            CARE<span className="text-[24px] text-violet-600">NEST</span>
           </h1>
-          <div className="menu">
-            <Link to="/home">Home</Link>
-            <Link to="/jobs">Jobs</Link>
-            <Link to="/settings">Settings</Link>
+          <div className="flex justify-between items-center gap-[10px] text-white">
+            <Link class="text-[20px] text- rounded-[7px] px-1 py-[2px] text-center text-black no-underline font-sans hover:bg-[blueviolet] hover:text-white cursor-pointer " to="/home">Home</Link>
+            <Link class="text-[20px] text- rounded-[7px] px-1 py-[2px] text-center text-black no-underline font-sans hover:bg-[blueviolet] hover:text-white cursor-pointer " to="/jobs">Jobs</Link>
+            <Link class="text-[20px] text- rounded-[7px] px-1 py-[2px] text-center text-black no-underline font-sans hover:bg-[blueviolet] hover:text-white cursor-pointer " to="/settings">Settings</Link>
           </div>
-          <div className="sidebar">
-            <img src="/image/twitter.jpg" alt="twitter" className="resize" />
+          <div className="flex items-center gap-[10px] mr-[7px]">
+            <img src="/image/twitter.jpg" alt="twitter" className="w-[20px] h-[20px] rounded-[17px]" />
 
-            <button onClick={handleLogout} className="logout-btn">
+            <button onClick={handleLogout} className="bg-[#2a3ad0] text-white px-4 py-2 text-[0.95rem] rounded-[6px] cursor-pointer transition-colors duration-200 hover:bg-[#fb0202]">
             Logout
           </button>
           </div>

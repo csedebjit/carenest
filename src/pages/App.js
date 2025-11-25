@@ -25,39 +25,39 @@ function  App() {
     <>
       <div className="main">
         
-        <div className="heading">
+        <div className="text-center text-black">
           <h2>
             Book reliable professionals for your{" "}
-            <span className="head">Home</span>
+            <span className="text-violet-600">Home</span>
           </h2>
         </div>
-        <div className="services">
-          <button onClick={() => houseKeeper()} className="first">
-            <img src="/image/house.png" alt="House Keeper" />
-            <h3>House Keeper</h3>
+        <div className="p-10 flex flex-row items-center justify-center gap-5 bg-white">
+          <button onClick={() => houseKeeper()} className="bg-white border-2 border-black rounded-[10px] w-[200px] p-[14px] text-center">
+            <img class="w-full h-[150px] object-contain" src="/image/house.png" alt="House Keeper" />
+            <h3 class="mt-[10px] font-bold text-black">House Keeper</h3>
           </button>
-          <button onClick={() => electrician()} className="first">
-            <img src="/image/electrician.png" alt="Electrician" />
-            <h3>Electrician</h3>
+          <button onClick={() => electrician()} className="bg-white border-2 border-black rounded-[10px] w-[200px] p-[14px] text-center">
+            <img class="w-full h-[150px] object-contain" src="/image/electrician.png" alt="Electrician" />
+            <h3 class="mt-[10px] font-bold text-black">Electrician</h3>
           </button>
-          <button onClick={() => plumber()} className="first">
-            <img src="/image/plumber.png" alt="plumber" />
-            <h3>Plumber</h3>
+          <button onClick={() => plumber()} className="bg-white border-2 border-black rounded-[10px] w-[200px] p-[14px] text-center">
+            <img class="w-full h-[150px] object-contain" src="/image/plumber.png" alt="plumber" />
+            <h3 class="mt-[10px] font-bold text-black">Plumber</h3>
           </button>
-          <button onClick={() => cook()} className="first">
-            <img src="/image/cook.png" alt="cook" />
-            <h3>cook</h3>
+          <button onClick={() => cook()} className="bg-white border-2 border-black rounded-[10px] w-[200px] p-[14px] text-center">
+            <img class="w-full h-[150px] object-contain" src="/image/cook.png" alt="cook" />
+            <h3 class="mt-[10px] font-bold text-black">cook</h3>
           </button>
         </div>
-        <div className="booking-btn">
-          <button onClick={() => navigate("/bookingform")}>Book Now</button>
+        <div className="bg-white flex justify-center text-center mb-5">
+          <button class="text-[20px] font-bold border border-black rounded-[7px] text-white bg-[rgb(44,32,215)] px-5 py-2 cursor-pointer" onClick={() => navigate("/bookingform")}>Book Now</button>
         </div>
-        <div className="contact">
-          <div className="logo">
+        <div className="flex justify-around bg-[#c8c2c2] w-full h-[140px] p-5 border-b-2 border-black">
+          <div className="text-[20px]">
             <h4>
-              CARE<span className="nest">NEST</span>
+              CARE<span className="text-[24px] text-[blueviolet]">NEST</span>
             </h4>
-            <p>Your Window To Accelarate R&D </p>
+            <p className="text-[17px]">Your Window To Accelarate R&D </p>
           </div>
           <div className="email">
             <h3>Contact Support</h3>
@@ -67,45 +67,45 @@ function  App() {
             <h3>Contact sales</h3>
             <a href="google.com">sales@abc.com</a>
           </div>
-          <div className="social">
+          <div className="mt-[34px]">
             <button onClick={() => alert("You clicked on Facebook")}>
-              <img
+              <img class="ml-[10px] rounded-[10px]"
                 src="/image/facebook.jpg"
                 alt="facebook"
-                className="resized"
+                className="w-[40px] h-[40px] rounded-[17px]"
               />
             </button>
             <button onClick={() => alert("You clicked on LinkedIn")}>
-              <img
+              <img class="ml-[10px] rounded-[10px]"
                 src="/image/linkedin.png"
                 alt="linkedin"
-                className="resized"
+                className="w-[40px] h-[40px] rounded-[17px]"
               />
             </button>
           </div>
         </div>
-        <div className="company">
-          <div className="about">
+        <div className="w-full h-[170px] flex justify-around bg-cyan-400">
+          <div className="flex flex-col">
             <h3>About Company</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
               elusmod tempor.
             </p>
           </div>
-          <div className="quick">
+          <div className="flex flex-col">
             <h3>Quick Links</h3>
             <a href="google.com">Home</a>
             <a href="google.com">Jobs</a>
             <a href="google.com">Settings</a>
           </div>
-          <div className="social-links">
+          <div className="mt-0 flex flex-col">
             <h3>Social Links</h3>
             <a href="facebook.com">Facebook</a>
             <a href="instagram.com">Instagram</a>
             <a href="linkedin.com">linkedIn</a>
             <a href="x.com">Twitter</a>
           </div>
-          <div className="support-links">
+          <div className="flex flex-col">
             <h3>Support Links</h3>
             <a href="google.com">Privacy Policy</a>
             <a href="google.com">Legal Information</a>
