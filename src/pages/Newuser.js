@@ -54,8 +54,8 @@ function New_User() {
   };
 
   return (
-    <div className="form-container">
-      <div className="logo">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center relative font-sans">
+      <div className="text-[20px]">
       <div className="same-line">
         <img src="./image/logo.png" alt="logo" className="logo-img"/>
       <h1 className="brand">

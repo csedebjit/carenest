@@ -67,7 +67,7 @@
 } */
 
 
-.heading{
+/* .heading{
   text-align: center;
   color: black;
 
@@ -178,7 +178,7 @@
 .support-links {
   display: flex;
   flex-direction: column;
-}
+} */
 .login {
   width: 50px;
   height: 27px;
