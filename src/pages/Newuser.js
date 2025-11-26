@@ -62,12 +62,12 @@ function New_User() {
             CARE<span className="nest">NEST</span>
       </h1>
       </div>
-      <form onSubmit={handleSubmit} className="registration-form">
-        <h2>User Registration</h2>
+      <form onSubmit={handleSubmit} className="flex flex-col">
+        <h2 class="text-center text-[#333] mb-[25px]">User Registration</h2>
 
-        <div className="form-group">
+        <div className="h-[66px] w-[414px] bg-[#e0b3ff] rounded-[12px] my-[10px] relative flex items-center pl-[15px]">
           {/* <label>First Name</label> */}
-          <input
+          <input  class="w-full bg-transparent border-none outline-none text-[16px] py-[12px] pr-[50px] pl-0 focus:border-blue-500 focus:shadow-[0_0_5px_rgba(0,123,255,0.3)]"
             type="text"
             name="firstName"
             value={formData.firstName}
@@ -77,9 +77,9 @@ function New_User() {
           />
         </div>
 
-        <div className="form-group">
+        <div className="h-[66px] w-[414px] bg-[#e0b3ff] rounded-[12px] my-[10px] relative flex items-center pl-[15px]">
           {/* <label>Last Name</label> */}
-          <input
+          <input class="w-full bg-transparent border-none outline-none text-[16px] py-[12px] pr-[50px] pl-0 focus:border-blue-500 focus:shadow-[0_0_5px_rgba(0,123,255,0.3)]"
             type="text"
             name="lastName"
             value={formData.lastName}
@@ -89,9 +89,9 @@ function New_User() {
           />
         </div>
 
-        <div className="form-group">
+        <div className="h-[66px] w-[414px] bg-[#e0b3ff] rounded-[12px] my-[10px] relative flex items-center pl-[15px]">
           {/* <label>Email or Phone</label> */}
-          <input
+          <input class="w-full bg-transparent border-none outline-none text-[16px] py-[12px] pr-[50px] pl-0 focus:border-blue-500 focus:shadow-[0_0_5px_rgba(0,123,255,0.3)]"
             type="text"
             name="contact"
             value={formData.contact}
@@ -101,9 +101,9 @@ function New_User() {
           />
         </div>
 
-        <div className="form-group">
+        <div className="h-[66px] w-[414px] bg-[#e0b3ff] rounded-[12px] my-[10px] relative flex items-center pl-[15px]">
           {/* <label>Password</label> */}
-          <input
+          <input class="w-full bg-transparent border-none outline-none text-[16px] py-[12px] pr-[50px] pl-0 focus:border-blue-500 focus:shadow-[0_0_5px_rgba(0,123,255,0.3)]"
             type="password"
             name="password"
             value={formData.password}
@@ -113,10 +113,10 @@ function New_User() {
           />
         </div>
 
-        <div className="form-group">
+        <div className="h-[66px] w-[414px] bg-[#e0b3ff] rounded-[12px] my-[10px] relative flex items-center pl-[15px]">
           <label>Gender</label>
-          <div className="gender-options">
-            <label>
+          <div className="flex justify-between py-[5px]">
+            <label class="font-medium text-[#333]">
               <input
                 type="radio"
                 name="gender"
@@ -151,7 +151,7 @@ function New_User() {
 
         {errorMsg && <p className="error-message">{errorMsg}</p>}
 
-        <button type="submit" className="submit-btn">
+        <button type="submit" className="w-[414px] p-[12px] bg-[#9c27b0] text-white font-bold rounded-[10px] text-[18px] cursor-pointer mb-[10px] transition duration-300 hover:bg-[#0056b3]">
           Register Now
         </button>
       </form>
